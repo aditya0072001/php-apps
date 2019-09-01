@@ -23,10 +23,10 @@
               echo "$price <br>";
               echo "$author <br>";
             }
-
-            $b1 = new Book("Song of ice and fire",67.89,"J.K.Rowling");
-            $b1.show();
           }
+
+          $b1 = new Book("Song of ice and fire",67.89,"J.K.Rowling");
+          $b1.show();
        ?>
   </body>
 </html>
