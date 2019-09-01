@@ -12,21 +12,21 @@
             private $price;
             private $author;
 
-            function _construct($name,$price,$author){
-              $this->$name=$name;
-              $this->$price=$price;
-              $this->$author=$author;
+            function _construct($n,$p,$a){
+              $this->$name=$n;
+              $this->$price=$p;
+              $this->$author=$a;
             }
 
             function show(){
-              echo "$name <br>";
-              echo "$price <br>";
-              echo "$author <br>";
+              echo "$this->$name <br>";
+              echo "$this->$price <br>";
+              echo "$this->$author <br>";
             }
           }
 
           $b1 = new Book("Song of ice and fire",67.89,"J.K.Rowling");
-          $b1.show();
+          echo "$b1->show()";
        ?>
   </body>
 </html>
