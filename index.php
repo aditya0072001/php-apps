@@ -6,7 +6,27 @@
   </head>
   <body>
       <?php
-          echo "Hello World";
+          class Book
+          {
+            private $name;
+            private $price;
+            private $author;
+
+            function _construct($name,$price,$author){
+              $this->$name=$name;
+              $this->$price=$price;
+              $this->$author=$author;
+            }
+
+            function show(){
+              echo "$name <br>";
+              echo "$price <br>";
+              echo "$author <br>";
+            }
+
+            $b1 = new Book("Song of ice and fire",67.89,"J.K.Rowling");
+            $b1.show();
+          }
        ?>
   </body>
 </html>
