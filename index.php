@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+*<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -10,14 +10,14 @@
             private $name;
             private $price;
 
-          public  function _construct($name,$price){
+          public  function __construct($name,$price){
               $this->name=$name;
               $this->price=$price;
             }
 
             public function show(){
-              echo "$name <br>";
-              echo "$price <br>";
+              echo "$this->name <br>";
+              echo "$this->price <br>";
             }
           }
 
