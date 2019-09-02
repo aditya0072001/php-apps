@@ -10,9 +10,9 @@
             private $name;
             private $price;
 
-          public  function _construct($n,$p){
-              $this->$name=$n;
-              $this->$price=$p;
+          public  function _construct($name,$price){
+              $this->name=$name;
+              $this->price=$price;
             }
 
             public function show(){
